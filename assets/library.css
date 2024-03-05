@@ -1,0 +1,148 @@
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,
+figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,main,mark,menu,nav,object,ol,output,
+p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,
+video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,
+aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,
+section{display:block}[hidden]{display:none}body{line-height:1}menu,ol,ul{list-style:none}blockquote,q{quotes:none}
+blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+.text-center{text-align: center;}
+header{height: 80px;}
+.container{width: 1280px; margin: 0 auto; border: 3px solid #000;}
+.container .section-head{height: 40px;border-bottom: 3px solid #000;position: relative;}
+.container .section-head .btn-x{
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    display: block;
+    cursor: pointer;
+}
+
+.container .section-main{
+    padding: 30px;
+    position: relative;
+}
+
+/* 검색 */
+.container .section-main .search{
+    height: 70px;
+    border:3px solid #000;
+    margin-bottom: 7px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.container .section-main .search input{
+    height: 40px;
+    border:3px solid #000;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.container .section-main .search #keyword{
+    width: 68%;
+}
+.container .section-main .search #btn-search{
+    background-color: #B5E61D;
+    width: 70px;
+    font-weight: bold;
+    margin-left: 15px;   
+    cursor: pointer;
+}
+
+/* 목록 */
+.container .section-main .table{
+    height: 350px;
+    padding: 20px;
+    border:3px solid #000;
+
+    
+}
+
+.container .section-main .table table{
+    border:3px solid #000;
+    width: 100%;
+    text-align: center;
+
+    display: block;
+    height: 350px;
+    overflow-y: scroll;
+}
+.container .section-main .table table tr th{
+    background-color: #999;
+}
+.container .section-main .table table tr th,
+.container .section-main .table table tr td{
+    border:3px solid #000;
+    height: 40px;
+    vertical-align: middle;
+}
+.container .section-main .table table tr:hover{
+    cursor: pointer;
+    background-color: #eee;
+}
+
+/* 등록하기 */
+.container .section-main .section-write{
+    height: 180px;
+    border:3px solid #000;
+    border-top:none;
+    padding: 30px;
+}
+.container .section-main .section-write input{
+    height: 40px;
+    border:3px solid #000;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.container .section-main .section-write .write-block{
+    margin-top: 10px;
+    display: flex;
+}
+.container .section-main .section-write .section-write-main{
+    width: 80%; 
+}
+.container .section-main .section-write .section-write-main #title{
+    width: 500px;
+}
+.container .section-main .section-write .section-write-main .sw-content{
+  margin-top: 10px;
+}
+.container .section-main .section-write .section-write-main .sw-content #content {
+    border:3px solid #000;
+    width: 867px;
+    padding: 5px;
+    height: 80px;
+}
+.container .section-main .section-write .section-write-input{
+    width: 20%;
+}
+.container .section-main .section-write .section-write-input #btn-write{
+    width: 180px;
+    cursor: pointer;
+    position: relative;
+    top: 50px;
+}
+
+.container .section-main .section-write .section-write-input #btn-update{
+    width:70px;
+    cursor: pointer;
+    position: relative;
+    top: 80px;
+    display: none; 
+    background-color: #B5E61D;
+}
+.container .section-main .section-write .section-write-input #btn-cancel{
+    width: 70px;
+    cursor: pointer;
+    position: relative;
+    top: 80px;
+    display: none;
+}
+.container .section-main .section-write .section-write-input #btn-delete{
+    width: 70px;
+    cursor: pointer;
+    position: relative;
+    top: 80px;
+   display: none; 
+    background-color: rgb(225, 89, 44);
+}

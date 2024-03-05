@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>library</title>
+    <link href="./assets/library.css" rel="stylesheet">
+    <script src="./assets/library.js" defer></script>
+</head>
+<body>
+
+    <header></header>
+
+    <section>
+        <div class="container">
+
+            <div class="section-head">
+               <span class="btn-x" onclick="delateAll()">x</span>  
+            </div>
+
+            <div class="section-main">
+
+                <div class="search">
+                    <input type="search" id="keyword" name="keyword" placeholder="제목, 내용, 저자로 검색">
+                    <input type="date" id="start-date" name="start-date"> ~
+                    <input type="date" id="end-date" name="end-date">
+                    <input type="button" id="btn-search" value="검색">
+                </div>
+
+                <div class="table">
+                    <table>
+                        <thead>
+                            <tr id="trList">
+                                <th width="50">순번</th>
+                                <th width="200">제목</th>
+                                <th width="55%">내용</th>
+                                <th width="100">저자</th>
+                                <th width="150">출간날짜</th>
+                            </tr>    
+                        </thead>
+                        <tbody id="library-list">
+                        </tbody>
+                    </table>
+
+
+                </div>
+
+
+
+                <div class="section-write">
+                    <div class="section-write-title">
+                        <h2>새로운 서적 등록 (수정)</h2>
+                    </div>
+
+                    <div class="write-block">
+                        <div class="section-write-main">
+
+                            <div class="sw-input">
+                                <input type="text" id="title" name="title" placeholder="제목">
+                                <input type="text" id="author" name="author" placeholder="저자">
+                                <input type="date" id="regDate" name="regDate" placeholder="출간날짜">
+                            </div>
+
+                            <div class="sw-content">
+                                <textarea id="content" name="content" placeholder="내용"></textarea>
+                            </div>
+                        </div>
+
+
+                        <div class="section-write-input">
+                            <input type="hidden" id="library-id"  >
+                            <input type="button" id="btn-write" value="등록하기"> 
+                            <input type="button" id="btn-update" value="수정하기">
+                            <input type="button" id="btn-delete" value="삭제하기">
+                            <input type="button" id="btn-cancel" value="취소">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer></footer>
+
+</body>
+</html>
